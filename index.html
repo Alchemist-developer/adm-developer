@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Simon - ADM Developer</title>
+</head>
+
+<body>
+    <header id="header">
+        <img class="img-header" id="topo" src="imgs/logotipoAdm.png" alt="logo adm developer">
+        <nav id="nav">
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="/">Página inicial</a></li>
+                <li><a href="/">Projetos</a></li>
+                <li><a href="/">Habilidades</a></li>
+                <li><a href="/">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="candidato">
+        <div class="main-candidato">
+            <img class="img-candidato" src="imgs/avatar.png" alt="">
+            <h1>Olá, meu nome é <br />
+                Adryel Simon</h1>
+            <p style="text-align: center;">Sou apaixonado por construir telas e busco minha evolução nisso. <br />
+                Para ser melhor, é necessário conviver e se adaptar no dia-a-dia.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-text">
+            <h2>Conheça meus projetos</h2>
+            <p>Desde o design até o código</p>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <img class="img-card" src="imgs/pexels-alexandre-weiss-9443229.jpg" alt="">
+                <div style="text-align: start;">
+                    <h4>Projeto 1</h4>
+                    <p>Este é meu projeto desenvolvido
+                        utilizando HTML5, CC3 e Javascript.</p>
+                </div>
+                <a class="btn" href="">Veja mais</a>
+            </div>
+
+            <div class="card">
+                <img class="img-card" src="imgs/pexels-kassandre-pedro-10145028.jpg" alt="">
+                <div style="text-align: start;">
+                    <h4>Projeto 2</h4>
+                    <p>Este é meu projeto desenvolvido
+                        utilizando HTML5, CC3 e Javascript.</p>
+                </div>
+                <a class="btn" href="">Veja mais</a>
+            </div>
+
+            <div class="card">
+                <img class="img-card" src="imgs/pexels-mathias-pr-reding-11421405.jpg" alt="">
+                <div style="text-align: start;">
+                    <h4>Projeto 3</h4>
+                    <p>Este é meu projeto desenvolvido
+                        utilizando HTML5, CC3 e Javascript.</p>
+                </div>
+                <a class="btn" href="">Veja mais</a>
+            </div>
+
+            <div class="card">
+                <img class="img-card" src="imgs/pexels-niklas-jeromin-10540135.jpg" alt="">
+                <div style="text-align: start;">
+                    <h4>Projeto 4</h4>
+                    <p>Este é meu projeto desenvolvido
+                        utilizando HTML5, CC3 e Javascript.</p>
+                </div>
+                <a class="btn" href="">Veja mais</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="main-habilidades">
+        <div class="text-habilidade">
+            <h2>Habilidades</h2>
+            <p>Veja alguns dos meus conhecimentos na área de tecnologia.</p>
+        </div>
+
+        <div>
+            <ul class="habilidades">
+                <li class="mobile-size">HTML5</li>
+                <li class="mobile-size">CSS3</li>
+                <li class="mobile-size">Bootstrap</li>
+                <li class="mobile-size">JavaScript ES6</li>
+                <li class="mobile-size">React.Js</li>
+                <li class="mobile-size">Git</li>
+
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="formulario">
+        <div class="main-form">
+            <h2 style="margin-top: 70px;">Contato</h2>
+            <p>Preencha o formulário abaixo para <br /> entrar em contato</p>
+        </div>
+        <form action="javascript:enviar()" class="column">
+            <div class="row">
+                <label for="">
+                    <p> Nome: </p><br />
+                    <input class="area input-nome" type="text" name="nome" id="nome" size="20"
+                        placeholder="Digite seu nome" autofocus />
+                </label>
+                <label for="">
+                    <p> Sobrenome: </p> <br />
+                    <input class="area input-sobrenome" type="text" name="sobrenome" id="sobrenome" size="20"
+                        placeholder="Digite seu sobrenome" autofocus />
+                </label>
+            </div>
+            <div class="row">
+                <label for="">
+                    <p> Email: </p><br />
+                    <input class="area input-email" type="text" name="nome" id="nome" size="20"
+                        placeholder="Digite seu email" autofocus />
+                </label>
+                <label for="">
+                    <p> Telefone: </p> <br />
+                    <input class="area input-tel" type="number" name="sobrenome" id="sobrenome" size="20"
+                        placeholder="Digite seu telefone" autofocus />
+                </label>
+            </div>
+            <label for="">
+                <p>Mensagem: </p> <br>
+                <textarea class="area input-mensagem" name="mensagem" id="mensagem" cols="50" rows="4"
+                    placeholder="Digite sua mensagem..."></textarea>
+            </label>
+            <div class="confirm">
+                <label>
+                    <a class="cancelar" href="#topo">Cancelar</a>
+                    <input class="btn" type="submit" value="Enviar">
+                </label>
+            </div>
+        </form>
+
+    </section>
+    <script src="/js/index.js"></script>
+    <script src="/js/nav-bar.js"></script>
+
+
+</body>
+
+</html>
